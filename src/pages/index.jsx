@@ -1,21 +1,34 @@
 import React from 'react';
 import Layout from '../components/layout';
 import '../styles/index.css';
+import '@fontsource/pt-serif';
+import '@fontsource/mulish/400.css';
+import '@fontsource/mulish/700.css';
 
 function Index() {
   return (
     <Layout>
-      <h1>I bridge design and tech to build better products.</h1>
-      <p>
-        I’m a product designer who is fluent in product design and tech. As the
-        UX lead in a product team, I led and advocated for best practices such
-        as design research, usability testing, prototyping and accessibility. I
-        believe in research and continuous testing to build great experiences to
-        solve real needs. In my free time, I work on fun side projects as a way
-        to learn programming and understand technology. I live with my partner
-        and our two cats. My current obsessions are bullet journaling and
-        watching The Real Housewives of Atlanta.
-      </p>
+      <div className='col-span-6'>
+        <h1 className="font-serif text-3xl leading-relaxed text-gray-600 mt-6 mb-4">
+          I bridge design and tech to build better products.
+        </h1>
+      </div>
+      <div className='col-span-7'>
+        <p>I’m a product designer who is fluent in both design and code.</p>
+        <p>
+          As the lead UX designer in a product team, I led and advocated for best
+          practices such as design research, usability testing, prototyping and
+          accessibility.
+        </p>
+        <p>
+          I believe in research and continuous testing to build great products
+          that solve real needs.
+        </p>
+        <p>
+          I live with my partner and our two cats. My current obsessions include
+          drinking tea, bullet journaling, and watching reality TV.
+        </p>
+      </div>
     </Layout>
   );
 }
