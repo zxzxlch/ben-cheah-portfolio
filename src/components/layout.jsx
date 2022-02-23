@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import Navbar from './navbar';
+import Footer from './footer';
 import AnimatedGradient from './animated-gradient';
 
 const Layout = ({ children }) => {
@@ -7,38 +8,11 @@ const Layout = ({ children }) => {
     <>
       <div className="container text-base">
         <div className="mx-auto max-w-3xl">
-          <nav className="font-serif flex justify-between pt-10 pb-6 px-1 mb-6 border-b border-gray-600">
-            <Link to="/" className="font-bold text-lg">
-              Ben Cheah
-            </Link>
-            <ul className="flex text-base text-gray-700 space-x-12">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/works">Works</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </nav>
-          <main className="grid grid-cols-8 gap-4 text-gray-800 antialiased">
+          <Navbar />
+          <main className="px-5 sm:px-0 grid grid-cols-4 sm:grid-cols-8 gap-4 text-gray-800 antialiased">
             {children}
           </main>
-          <footer className="px-1 pt-6 mt-20 border-t border-gray-600 text-gray-700 text-sm">
-            <ul className="flex space-x-8">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/works">Works</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </footer>
+          <Footer />
         </div>
       </div>
       <AnimatedGradient />
