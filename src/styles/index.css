@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  h2 {
+    @apply font-serif text-2xl leading-relaxed text-gray-800 mb-2;
+  }
   p {
     @apply mb-6 leading-loose;
+  }
+  a {
+    @apply underline underline-offset-2;
   }
 }

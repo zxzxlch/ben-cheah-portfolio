@@ -5,7 +5,11 @@ import Layout from '../../components/layout';
 
 function WorkPost({ data }) {
   const { title } = data.mdx.frontmatter;
-  const backLink = <Link to="..">&#8592; Back to Works</Link>;
+  const backLink = (
+    <Link to=".." className="no-underline">
+      &#8592; <span className="underline">Back to Works</span>
+    </Link>
+  );
 
   return (
     <Layout>
