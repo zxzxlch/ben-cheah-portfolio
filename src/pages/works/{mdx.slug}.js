@@ -1,17 +1,21 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../../components/layout';
 
 function WorkPost({ data }) {
   const { title } = data.mdx.frontmatter;
+  const backLink = <Link to="..">&#8592; Back to Works</Link>;
+
   return (
     <Layout>
       <div className="col-span-7">
+        {backLink}
         <h1 className="font-serif text-3xl leading-relaxed text-gray-600 mt-6 mb-4">
           {title}
         </h1>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        {backLink}
       </div>
     </Layout>
   );

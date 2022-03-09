@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../../components/layout';
 
 function Index() {
@@ -11,7 +12,9 @@ function Index() {
         <ul>
           <li>
             <p>
-              <strong>My Legacy</strong>
+              <Link to="./my-legacy">
+                <strong>My Legacy</strong>
+              </Link>
             </p>
             <p>
               Lead designer for a government website that helps people to do
@@ -31,9 +34,7 @@ function Index() {
             <p>
               <strong>Yomap</strong>
             </p>
-            <p>
-              Build an indie iPhone app for travellers to map their places.
-            </p>
+            <p>Build an indie iPhone app for travellers to map their places.</p>
           </li>
         </ul>
         <p>Download my CV for my full work experience.</p>
