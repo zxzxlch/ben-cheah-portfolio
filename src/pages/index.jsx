@@ -10,7 +10,7 @@ function Index() {
     <Layout>
       <div className='col-span-4 sm:col-span-6'>
         <h1 className="title">
-          I bridge design and tech to build better products.
+          Bridging design and tech to build better products.
         </h1>
       </div>
       <div className='col-span-4 sm:col-span-7'>
