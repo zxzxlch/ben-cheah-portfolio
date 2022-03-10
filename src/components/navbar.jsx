@@ -9,8 +9,8 @@ const Navbar = () => {
   return (
     <nav className="flex flex-col sm:flex-row justify-between mx-3 mb-6 px-2 pt-5 pb-2 sm:pt-10 sm:pb-6 sm:px-1 sm:mx-0 space-y-4 sm:space-y-0 border-b border-gray-600 text-gray-900/90 font-serif ">
       <div className="w-full flex justify-between">
-        <Link to="/" className="font-bold text-lg leading-9 no-underline">
-          <SiteLogo width="" height="28" className=" fill-black" />
+        <Link to="/" className="font-bold text-lg  leading-9 no-underline">
+          <SiteLogo width="" height="28" className="mt-1 fill-black" />
         </Link>
         <button
           onClick={() => setOpen(!open)}
