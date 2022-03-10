@@ -2,49 +2,43 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../../components/layout';
 
-function Index() {
+const Index = () => {
+  const Work = ({ title, linkUrl, children }) => {
+    const workTitle = linkUrl ? <Link to={linkUrl}>{title}</Link> : title;
+    return (
+      <li className="pl-1">
+        <div className="mb-2">{workTitle}</div>
+        <p>{children}</p>
+      </li>
+    );
+  };
+
   return (
     <Layout>
       <div className="col-span-7">
-        <h1 className="font-serif text-3xl leading-relaxed text-gray-600 mt-6 mb-4">
-          Selected Works
-        </h1>
-        <ul>
-          <li>
-            <p>
-              <Link to="./my-legacy">
-                <strong>My Legacy</strong>
-              </Link>
-            </p>
-            <p>
-              Lead designer for a government website that helps people to do
-              their end-of-life planning and settle the death of a loved one.
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>MSF Case Management System</strong>
-            </p>
-            <p>
-              Conducted research, designed a mobile app and web CMS for MSF
-              officers to log cases on the move and review the cases later.
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Yomap</strong>
-            </p>
-            <p>Build an indie iPhone app for travellers to map their places.</p>
-          </li>
+        <h1 className="title mb-6">Selected works</h1>
+        <ul className="pl-5 list-disc">
+          <Work title="My Legacy" linkUrl="./my-legacy">
+            Led multiple features and helped set up the design system. My Legacy
+            is a government website that guides Singaporeans in matters of
+            end-of-life planning, death, funerals and inheritance.
+          </Work>
+          <Work title="MSF Case Management System">
+            As part of a UX team, I conducted field research and interviews, and
+            designed the user interface for a mobile app and web CMS for MSF
+            officers to log cases on the move and review the cases later.
+          </Work>
+          <Work title="Yomap">
+            Independently designed and developed an iPhone app for travellers to
+            save places to their personal map.
+          </Work>
         </ul>
-        <p>Download my CV for my full work experience.</p>
-        <h2 id="side-projects">Side Projects</h2>
-        <ul>
-          <li>GE2015 Visualisations</li>
-        </ul>
+        <p>
+          <Link to="#">Download my CV.</Link>
+        </p>
       </div>
     </Layout>
   );
-}
+};
 
 export default Index;

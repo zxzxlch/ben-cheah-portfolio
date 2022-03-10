@@ -9,7 +9,7 @@ function Index() {
   return (
     <Layout>
       <div className='col-span-4 sm:col-span-6'>
-        <h1 className="font-serif text-3xl leading-relaxed text-gray-600 mt-6 mb-4">
+        <h1 className="title">
           I bridge design and tech to build better products.
         </h1>
       </div>

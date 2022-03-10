@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <div className="container text-base">
         <div className="mx-auto max-w-3xl">
           <Navbar />
-          <main className="px-5 sm:px-0 grid grid-cols-4 sm:grid-cols-8 gap-4 text-gray-800 antialiased">
+          <main className="px-5 sm:px-0 grid grid-cols-4 sm:grid-cols-8 gap-4 antialiased">
             {children}
           </main>
           <Footer />
