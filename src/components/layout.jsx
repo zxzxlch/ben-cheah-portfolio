@@ -8,10 +8,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="container text-base">
-        <Helmet defaultTitle="Ben Cheah" titleTemplate="Ben Cheah - %s">
+        <Helmet defaultTitle="Ben Cheah &middot; UX Designer" titleTemplate="Ben Cheah &middot; %s">
           <html lang="en" />
           <meta charSet="utf-8" />
-          <link rel="canonical" href="https://bencheah.com" />
         </Helmet>
         <div className="mx-auto max-w-3xl">
           <Navbar />

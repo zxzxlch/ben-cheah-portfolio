@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/layout';
 
 const Index = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
       <div className="col-span-7">
         <h1 className="title mb-6">Contact</h1>
         <p>
@@ -13,7 +16,7 @@ const Index = () => {
           <a
             href="https://www.linkedin.com/in/benjamincheah/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             LinkedIn
           </a>

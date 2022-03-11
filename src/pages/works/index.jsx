@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 import Layout from '../../components/layout';
 
@@ -16,6 +17,11 @@ const Index = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Selected works</title>
+        <meta name="description" content="" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="col-span-7">
         <h1 className="title mb-6">Selected works</h1>
         <ul className="mb-8 pl-5 space-y-8 list-disc">

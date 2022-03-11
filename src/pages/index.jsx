@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/layout';
 import '../styles/index.css';
 import '@fontsource/pt-serif';
@@ -8,17 +9,24 @@ import '@fontsource/mulish/700.css';
 function Index() {
   return (
     <Layout>
-      <div className='col-span-4 sm:col-span-6'>
+      <Helmet>
+        <title>UX Designer</title>
+        <meta
+          name="description"
+          content="Hi, I'm Ben, a product designer who is fluent in design and code. I believe in design research, usability testing, prototyping, and accessibility."
+        />
+      </Helmet>
+      <div className="col-span-4 sm:col-span-6">
         <h1 className="title">
           Bridging design and tech to build better products.
         </h1>
       </div>
-      <div className='col-span-4 sm:col-span-7'>
+      <div className="col-span-4 sm:col-span-7">
         <p>I’m a product designer who is fluent in both design and code.</p>
         <p>
-          As the lead UX designer in a product team, I led and advocated for best
-          practices such as design research, usability testing, prototyping and
-          accessibility.
+          As the lead UX designer in a product team, I led and advocated for
+          best practices such as design research, usability testing,
+          prototyping, and accessibility.
         </p>
         <p>
           I believe in research and continuous testing to build great products
