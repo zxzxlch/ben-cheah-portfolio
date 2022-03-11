@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 import Layout from '../../components/layout';
+import cvFile from '../../assets/bencheah-cv.pdf';
 
 const Index = () => {
   const Work = ({ title, linkUrl, children }) => {
@@ -41,7 +42,7 @@ const Index = () => {
           </Work>
         </ul>
         <p>
-          <Link to="#">Download my CV.</Link>
+          <Link to={cvFile}>Download my CV.</Link>
         </p>
       </div>
     </Layout>
