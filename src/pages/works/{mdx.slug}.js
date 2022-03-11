@@ -7,7 +7,7 @@ function WorkPost({ data }) {
   const { title } = data.mdx.frontmatter;
   const backLink = (
     <Link to=".." className="no-underline">
-      &#8592; <span className="underline">Back to Works</span>
+      &#8592; <span className="underline text-[#0E6173] decoration-[#0E6173]">Back to Works</span>
     </Link>
   );
 

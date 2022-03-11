@@ -4,11 +4,12 @@ import Layout from '../../components/layout';
 
 const Index = () => {
   const Work = ({ title, linkUrl, children }) => {
-    const workTitle = linkUrl ? <Link to={linkUrl}>{title}</Link> : title;
+    const link = linkUrl ? <Link to={linkUrl}>Read more&hellip;</Link> : null;
     return (
-      <li className="pl-1">
-        <div className="mb-2">{workTitle}</div>
+      <li className="pl-1 space-y-2">
+        <div className="mb-2 text-lg">{title}</div>
         <p>{children}</p>
+        <div>{link}</div>
       </li>
     );
   };
@@ -17,7 +18,7 @@ const Index = () => {
     <Layout>
       <div className="col-span-7">
         <h1 className="title mb-6">Selected works</h1>
-        <ul className="pl-5 list-disc">
+        <ul className="mb-8 pl-5 space-y-8 list-disc">
           <Work title="My Legacy" linkUrl="./my-legacy">
             Led multiple features and helped set up the design system. My Legacy
             is a government website that guides Singaporeans in matters of

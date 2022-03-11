@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { Bars as BarsIcon } from '@styled-icons/fa-solid/Bars';
-import SiteLogo from "../images/site-logo.svg";
+import SiteLogo from '../images/site-logo.svg';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const menuLinks = [
+    ['Home', '/'],
+    ['Works', '/works'],
+    ['Contact', '/contact'],
+  ].map(([label, url]) => (
+    <li>
+      <Link to={url} className="no-underline text-gray-800">
+        {label}
+      </Link>
+    </li>
+  ));
 
   return (
     <nav className="flex flex-col sm:flex-row justify-between mx-3 mb-6 px-2 pt-5 pb-2 sm:pt-10 sm:pb-6 sm:px-1 sm:mx-0 space-y-4 sm:space-y-0 border-b border-gray-600 text-gray-900/90 font-serif ">
@@ -25,21 +36,7 @@ const Navbar = () => {
           open ? '' : 'hidden'
         } sm:flex flex-col sm:flex-row pb-6 space-y-6 sm:pb-0 sm:space-y-0 sm:space-x-12 text-base`}
       >
-        <li>
-          <Link to="/" className="no-underline">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/works" className="no-underline">
-            Works
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact" className="no-underline">
-            Contact
-          </Link>
-        </li>
+        {menuLinks}
       </ul>
     </nav>
   );

@@ -16,7 +16,7 @@
     @apply mb-6 leading-loose;
   }
   a {
-    @apply underline underline-offset-2;
+    @apply underline underline-offset-2 text-[#0E6173] decoration-[#0E6173];
   }
   .title {
     @apply text-gray-900/80;
