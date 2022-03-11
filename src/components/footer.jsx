@@ -7,7 +7,7 @@ const Footer = () => {
     ['Works', '/works'],
     ['Contact', '/contact'],
   ].map(([label, url]) => (
-    <li>
+    <li key={label}>
       <Link to={url} className="no-underline text-gray-800">
         {label}
       </Link>
