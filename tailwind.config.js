@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./src/**/*.{html,js,ts,jsx,tsx}',],
+  content: ['./src/**/*.{html,js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
       sans: ['Mulish', 'ui-sans-serif', 'system-ui'],
@@ -33,7 +33,11 @@ module.exports = {
       9: '2.25rem',
       10: '2.5rem',
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#0E6173',
+      },
+    },
   },
   plugins: [],
 };

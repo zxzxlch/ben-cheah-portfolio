@@ -3,13 +3,15 @@ import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../../components/layout';
+import PageTitle from '../../components/page-title';
+import { post } from '../../styles/post.module.css';
 
 function WorkPost({ data }) {
   const { title, description } = data.mdx.frontmatter;
   const backLink = (
-    <Link to=".." className="no-underline">
+    <Link to=".." className="-ml-0.5 text-primary">
       &#8592;{' '}
-      <span className="underline text-[#0E6173] decoration-[#0E6173]">
+      <span className="underline text-primary decoration-primary">
         Back to Works
       </span>
     </Link>
@@ -22,12 +24,12 @@ function WorkPost({ data }) {
         <meta name="description" content={description} />
       </Helmet>
       <div className="col-span-7">
-        <article>
-          <h1 className="mt-10 mb-4 font-serif text-3xl leading-relaxed text-gray-600">
-          {title}
-        </h1>
-        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        <div className="mb-10">{backLink}</div>
+        <article className={post}>
+          <PageTitle>{title}</PageTitle>
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </article>
+        <div className="mt-10">{backLink}</div>
       </div>
     </Layout>
   );

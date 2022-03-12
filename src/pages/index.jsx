@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/layout';
+import PageTitle from '../components/page-title';
 import '../styles/index.css';
 import '@fontsource/pt-serif';
 import '@fontsource/mulish/400.css';
@@ -17,9 +18,9 @@ function Index() {
         />
       </Helmet>
       <div className="col-span-4 sm:col-span-6">
-        <h1 className="title">
+        <PageTitle>
           Bridging design and tech to build better products.
-        </h1>
+        </PageTitle>
       </div>
       <div className="col-span-4 sm:col-span-7">
         <p>I’m a product designer who is fluent in both design and code.</p>
