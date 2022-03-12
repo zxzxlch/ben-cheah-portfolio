@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby + Node.js API`,
-    siteUrl: `https://gatsby-template.vercel.app`,
+    title: `Ben Cheah · UX Designer`,
+    siteUrl: `https://bencheah.com`,
   },
   plugins: [
     {
@@ -45,6 +45,7 @@ module.exports = {
         siteUrl: `https://bencheah.com`,
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-axe`,
   ],
 };
