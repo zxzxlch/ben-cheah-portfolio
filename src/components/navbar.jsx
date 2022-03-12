@@ -10,8 +10,11 @@ const Navbar = () => {
     ['Works', '/works'],
     ['Contact', '/contact'],
   ].map(([label, url]) => (
-    <li key={label}>
-      <Link to={url} className="no-underline text-gray-800">
+    <li key={label} className="block">
+      <Link
+        to={url}
+        className="block py-2 sm:-my-2 no-underline text-gray-800"
+      >
         {label}
       </Link>
     </li>
@@ -25,7 +28,7 @@ const Navbar = () => {
       >
         Skip to main content
       </a>
-      <nav className="flex flex-col sm:flex-row justify-between mx-3 mb-6 px-2 pt-5 pb-2 sm:pt-10 sm:pb-6 sm:px-1 sm:mx-0 space-y-4 sm:space-y-0 border-b border-gray-600 text-gray-900/90 font-serif ">
+      <nav className="flex flex-col sm:flex-row justify-between mx-3 mb-6 px-2 pt-5 pb-2 sm:pt-10 sm:pb-6 sm:px-1 sm:mx-0 border-b border-gray-600 text-gray-900/90 font-serif ">
         <div className="w-full flex justify-between">
           <Link to="/" className="font-bold text-lg  leading-9 no-underline">
             <SiteLogo width="" height="28" className="mt-1 fill-black" />
@@ -42,7 +45,7 @@ const Navbar = () => {
         <ul
           className={`${
             open ? '' : 'hidden'
-          } sm:flex flex-col sm:flex-row pb-6 space-y-6 sm:pb-0 sm:space-y-0 sm:space-x-12 text-base`}
+          } sm:flex flex-col sm:flex-row mt-3 pb-4 space-y-3 sm:mt-0 sm:pb-0 sm:space-y-0 sm:space-x-12 text-base`}
         >
           {menuLinks}
         </ul>
