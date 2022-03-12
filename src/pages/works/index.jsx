@@ -36,7 +36,7 @@ const Index = () => {
             designed the user interface for a mobile app and web CMS for MSF
             officers to log cases on the move and review the cases later.
           </Work>
-          <Work title="Yomap">
+          <Work title="Yomap" linkUrl="./yomap">
             Independently designed and developed an iPhone app for travellers to
             save places to their personal map.
           </Work>
