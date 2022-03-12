@@ -11,8 +11,15 @@
     a {
       @apply underline text-primary decoration-primary;
     }
-    img {
-      @apply pt-2 pb-2;
+    p :global(.gatsby-resp-image-link) {
+      @apply mt-6 mb-6;
+    }
+    figure {
+      @apply mt-8 mb-8;
+
+      figcaption {
+        @apply mt-3 text-sm text-gray-600;
+      }
     }
   }
 }
