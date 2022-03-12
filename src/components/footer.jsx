@@ -8,7 +8,7 @@ const Footer = () => {
     ['Contact', '/contact'],
   ].map(([label, url]) => (
     <li key={label}>
-      <Link to={url} className="no-underline text-gray-800">
+      <Link to={url} className="text-gray-800 no-underline focus:underline hover:underline active:underline">
         {label}
       </Link>
     </li>

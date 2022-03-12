@@ -13,7 +13,7 @@ const Navbar = () => {
     <li key={label} className="block">
       <Link
         to={url}
-        className="block py-2 sm:-my-2 no-underline text-gray-800"
+        className="block py-2 sm:-my-2 text-gray-800 no-underline focus:underline hover:underline active:underline"
       >
         {label}
       </Link>

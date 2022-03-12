@@ -4,7 +4,7 @@
 
 @layer base {
   * {
-    @apply text-gray-800;
+    @apply text-gray-800 decoration-1 underline-offset-2;
   }
   p {
     @apply mb-4 leading-loose;

@@ -9,7 +9,7 @@
       @apply mb-4 leading-loose;
     }
     a {
-      @apply underline underline-offset-2 text-primary decoration-primary;
+      @apply underline text-primary decoration-primary;
     }
     img {
       @apply pt-2 pb-2;
