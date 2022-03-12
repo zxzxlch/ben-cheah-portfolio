@@ -34,7 +34,7 @@ const Navbar = () => {
       >
         <div className="w-full flex justify-between">
           <Link to="/" className="font-bold text-lg  leading-9 no-underline">
-            <SiteLogo width="" height="28" className="mt-1 fill-black" />
+            <SiteLogo className="mt-1 w-auto h-[28px] fill-black" />
             <span className="sr-only">Ben Cheah Home</span>
           </Link>
           <button
