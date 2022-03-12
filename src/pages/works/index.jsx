@@ -28,7 +28,7 @@ const Index = () => {
         <meta property="og:type" content="article" />
       </Helmet>
       <div className="col-span-7">
-        <div className={post}>
+        <div id="main" className={post}>
           <PageTitle>Selected works</PageTitle>
           <ul className="mt-6 mb-12 pl-5 space-y-8 list-disc">
             <Work title="My Legacy" linkUrl="./my-legacy">

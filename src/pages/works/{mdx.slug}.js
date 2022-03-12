@@ -25,7 +25,7 @@ function WorkPost({ data }) {
       </Helmet>
       <div className="col-span-7">
         <div className="mb-10">{backLink}</div>
-        <article className={post}>
+        <article id="main" className={post}>
           <PageTitle>{title}</PageTitle>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </article>

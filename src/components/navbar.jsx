@@ -19,6 +19,12 @@ const Navbar = () => {
 
   return (
     <header>
+      <a
+        className="absolute left-0 top-0 m-2 -translate-y-96 focus:translate-y-0 p-4 rounded bg-primary text-white font-bold text-lg underline"
+        href="#main"
+      >
+        Skip to main content
+      </a>
       <nav className="flex flex-col sm:flex-row justify-between mx-3 mb-6 px-2 pt-5 pb-2 sm:pt-10 sm:pb-6 sm:px-1 sm:mx-0 space-y-4 sm:space-y-0 border-b border-gray-600 text-gray-900/90 font-serif ">
         <div className="w-full flex justify-between">
           <Link to="/" className="font-bold text-lg  leading-9 no-underline">

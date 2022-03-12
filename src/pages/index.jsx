@@ -17,7 +17,7 @@ function Index() {
           content="Hi, I'm Ben, a product designer who is fluent in design and code. I believe in design research, usability testing, prototyping, and accessibility."
         />
       </Helmet>
-      <div className="col-span-4 sm:col-span-6">
+      <div id="main" className="col-span-4 sm:col-span-6">
         <PageTitle>
           Bridging design and tech to build better products.
         </PageTitle>

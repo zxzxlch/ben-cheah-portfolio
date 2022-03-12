@@ -11,7 +11,7 @@ const Index = () => {
         <title>Contact</title>
       </Helmet>
       <div className="col-span-7">
-        <div className={post}>
+        <div id="main" className={post}>
           <PageTitle>Contact</PageTitle>
           <p>
             Hey there! If you'd like to reach out, you can{' '}
