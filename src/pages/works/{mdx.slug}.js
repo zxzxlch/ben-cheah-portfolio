@@ -22,12 +22,12 @@ function WorkPost({ data }) {
         <meta name="description" content={description} />
       </Helmet>
       <div className="col-span-7">
-        {backLink}
-        <h1 className="font-serif text-3xl leading-relaxed text-gray-600 mt-6 mb-4">
+        <article>
+          <h1 className="mt-10 mb-4 font-serif text-3xl leading-relaxed text-gray-600">
           {title}
         </h1>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
-        {backLink}
+        </article>
       </div>
     </Layout>
   );

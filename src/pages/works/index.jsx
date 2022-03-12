@@ -9,9 +9,11 @@ const Index = () => {
     const link = linkUrl ? <Link to={linkUrl}>Read more&hellip;</Link> : null;
     return (
       <li className="pl-1 space-y-2">
+        <article>
         <div className="mb-2 text-lg">{title}</div>
         <p>{children}</p>
         <div>{link}</div>
+        </article>
       </li>
     );
   };
