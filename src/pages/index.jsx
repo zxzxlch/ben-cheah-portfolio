@@ -14,7 +14,7 @@ function Index() {
         <title>UX Designer</title>
         <meta
           name="description"
-          content="Hi, I'm Ben, a product designer who is fluent in design and code. I believe in design research, usability testing, prototyping, and accessibility."
+          content="Hi, I'm Ben, a UX designer who is fluent in design and code. I lead with best practices in design research, usability testing, prototyping, and accessibility."
         />
       </Helmet>
       <div id="main" className="col-span-4 sm:col-span-6">
@@ -23,19 +23,18 @@ function Index() {
         </PageTitle>
       </div>
       <div className="col-span-4 sm:col-span-7">
-        <p>I’m a product designer who is fluent in both design and code.</p>
+        <p>I’m a UX designer who is fluent in both design and code.</p>
         <p>
-          As the lead UX designer in a product team, I led and advocated for
-          best practices such as design research, usability testing,
-          prototyping, and accessibility.
+          As the lead designer in a product team, I led with best practices in
+          design research, usability testing, prototyping, and accessibility.
         </p>
         <p>
           I believe in research and continuous testing to build great products
           that solve real needs.
         </p>
         <p>
-          I live with my partner and our two cats. My current obsessions include
-          drinking tea, bullet journaling, and watching reality TV.
+          I live with my partner and our two cats. Some of my favourite things
+          include swimming, drinking tea, and bullet journaling.
         </p>
       </div>
     </Layout>
