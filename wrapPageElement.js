@@ -5,7 +5,7 @@ const wrapper = ({ element }) => {
   return (
     <>
       {element}
-      <AnimatedGradient />;
+      <AnimatedGradient />
     </>
   );
 };
