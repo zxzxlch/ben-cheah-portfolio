@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  * {
+  body {
     @apply text-gray-800 decoration-1 underline-offset-2;
   }
   p {

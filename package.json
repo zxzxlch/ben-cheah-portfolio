@@ -1,5 +1,10 @@
 {
+  "name": "ben-cheah-portfolio",
+  "author": "Ben Cheah",
+  "homepage": "https://bencheah.com",
+  "repository": "github:zxzxlch/ben-cheah-portfolio",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -12,6 +17,7 @@
     "@fontsource/pt-serif": "^4.5.2",
     "@mdx-js/mdx": "v1",
     "@mdx-js/react": "v1",
+    "@styled-icons/fa-brands": "^10.38.0",
     "@styled-icons/fa-solid": "^10.34.0",
     "autoprefixer": "^10.4.2",
     "babel-plugin-styled-components": "^2.0.5",

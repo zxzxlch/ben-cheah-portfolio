@@ -1,28 +1,24 @@
-# Gatsby
+# Ben Cheah - Portfolio Website
 
-This directory is a brief example of a [Gatsby](https://www.gatsbyjs.org/) app with [Serverless Functions](https://vercel.com/docs/concepts/functions/serverless-functions) that can be deployed to Vercel with zero configuration.
+[![Screenshot of bencheah.com homepage](docs/readme-website-preview-thumb.jpg)](docs/readme-website-preview.jpg)
 
-## Deploy Your Own
+This is the source code for my portfolio website. You can see it live on [bencheah.com](https://bencheah.com).
 
-Deploy your own Gatsby project, along with Serverless Functions, with Vercel.
+## What I Used
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/gatsby&template=gatsby)
+- [Gatsby](https://www.gatsbyjs.com/) as the base framework for this web app. Lots of nice modern features, including server-side rendering, image optimization, and page preloading.
+- [Tailwind](https://github.com/tailwindlabs/tailwindcss), which makes it fast to prototype layouts and style the website.
+- [Fontsource](https://fontsource.org/) to self-host the open source fonts used on this website.
+- [Styled Icons](https://github.com/styled-icons/styled-icons), which makes it easy to import and use icon packs like Font Awesome.
+- Gatsby plugins for processing markdown, adding website metadata, and importing SVGs.
 
-_Live Example: https://gatsby.vercel.app_
+## Setup
 
-## Running Locally
+To run this project, clone the repo. Then run:
 
-> **Note:** [Gatsby Functions](https://www.gatsbyjs.com/docs/reference/functions/getting-started/) are not yet supported on Vercel, which is why the API Route is in `/api` instead of `/src/api`.
-
-To run your Gatsby application and your API Route, you'll need to use the [Vercel CLI](https://vercel.com/cli):
-
-```shell
-$ npm i -g vercel
-$ vercel
+```
+$ yarn install
+$ yarn start
 ```
 
-Alternatively, you can remove the API and just use Gatsby:
-
-```shell
-$ yarn develop
-```
+You can then access the local application at localhost:8000.
