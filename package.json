@@ -1,5 +1,10 @@
 {
+  "name": "ben-cheah-portfolio",
+  "author": "Ben Cheah",
+  "homepage": "https://bencheah.com",
+  "repository": "github:zxzxlch/ben-cheah-portfolio",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
